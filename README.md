@@ -10,3 +10,4 @@ Used Store, Reducers, Provider, Actions, Action Creators, useDispatch and useSel
 - redux
 - react-redux
 - redux-thunk
+- node-sass

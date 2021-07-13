@@ -1,7 +1,7 @@
-import './App.css';
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "./state/index";
+import './App.sass';
 
 function App() {
 
@@ -11,9 +11,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{account}</h1>
-      <button onClick={() => depositMoney(1000)}> Deposit </button>
-      <button onClick={() => withdrawMoney(1000)}> Withdraw </button>
+      <div className='container'>
+        <h1 className='account'>{account}</h1>
+        <div className='btn-container'>
+          <button className='btn' onClick={() => depositMoney(1000)}> Deposit </button>
+          <button className='btn' onClick={() => withdrawMoney(1000)}> Withdraw </button>
+        </div>
+      </div>
     </div>
   );
 }
