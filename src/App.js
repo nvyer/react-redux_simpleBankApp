@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-        <h1 className='account'>{account}</h1>
+        <h1 className='account'>Account: {account}</h1>
         <div className='btn-container'>
           <button className='btn' onClick={() => depositMoney(1000)}> Deposit </button>
           <button className='btn' onClick={() => withdrawMoney(1000)}> Withdraw </button>
